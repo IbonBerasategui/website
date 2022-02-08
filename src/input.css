@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Raleway:ital,wght@1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .boton {
+      @apply bg-verdew hover:bg-verdeb text-naranjaw font-bold font-raleway py-2 px-4 rounded-md inline-block;
+    }
+  }

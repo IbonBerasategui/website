@@ -491,9 +491,208 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(10 21 13 / var(--tw-bg-opacity));
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-2{
+  top: 0.5rem;
+}
+
+.right-2{
+  right: 0.5rem;
+}
+
+.right-10{
+  right: 2.5rem;
+}
+
+.right-16{
+  right: 4rem;
+}
+
+.m-5{
+  margin: 1.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.ml-8{
+  margin-left: 2rem;
+}
+
+.ml-6{
+  margin-left: 1.5rem;
+}
+
+.block{
+  display: block;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.h-4{
+  height: 1rem;
+}
+
+.h-32{
+  height: 8rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.shrink-0{
+  flex-shrink: 0;
+}
+
+.snap-x{
+  -ms-scroll-snap-type: x var(--tw-scroll-snap-strictness);
+      scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-center{
+  scroll-snap-align: center;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-x-auto{
+  overflow-x: auto;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .bg-blancow{
   --tw-bg-opacity: 1;
   background-color: rgb(245 244 244 / var(--tw-bg-opacity));
+}
+
+.bg-naranjab{
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 128 46 / var(--tw-bg-opacity));
+}
+
+.bg-naranjaw{
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 163 57 / var(--tw-bg-opacity));
+}
+
+.bg-lilaw{
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 115 158 / var(--tw-bg-opacity));
+}
+
+.bg-salmonw{
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 182 157 / var(--tw-bg-opacity));
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-1{
+  padding: 0.25rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pr-10{
+  padding-right: 2.5rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
+.pb-3{
+  padding-bottom: 0.75rem;
 }
 
 .font-raleway{
@@ -504,14 +703,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: DM Sans, sans-serif;
 }
 
-.text-8xl{
-  font-size: 6rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-naranjaw{
@@ -522,4 +741,60 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-verdew{
   --tw-text-opacity: 1;
   color: rgb(19 42 19 / var(--tw-text-opacity));
+}
+
+.text-blancow{
+  --tw-text-opacity: 1;
+  color: rgb(245 244 244 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:h-64{
+    height: 16rem;
+  }
+
+  .md\:w-64{
+    width: 16rem;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:h-96{
+    height: 24rem;
+  }
+
+  .lg\:w-96{
+    width: 24rem;
+  }
+
+  .lg\:p-4{
+    padding: 1rem;
+  }
+
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }

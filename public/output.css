@@ -975,6 +975,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:min-h-min{
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1027,6 +1033,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:h-80{
     height: 20rem;
+  }
+
+  .lg\:min-h-min{
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
   }
 
   .lg\:w-20{

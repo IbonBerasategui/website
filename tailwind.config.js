@@ -3,6 +3,8 @@ module.exports = {
     './pages/**/*.{html,js}',
     './components/**/*.{html,js}',
     './public/index.html',
+    './public/politica-privacidad.html',
+    './public/politica-cookies.html',
     './src/**/*.{html,js}',
     './src/**/*.js',
   ],

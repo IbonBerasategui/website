@@ -20,52 +20,84 @@
 
     <script src="https://kit.fontawesome.com/5d94ff46f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="purecookie.css"/>
-    <script src="purecookie.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
+
 <body class="bg-blancow scroll-smooth mx-auto">
 
-  <nav class="flex items-center justify-between flex-wrap bg-naranjaw p-6 sticky top-0 z-10">
-    <div class="flex items-center flex-shrink-0 text-white mr-6 relative w-20">
-      <a class="absolute -top-4" href="/">
-        <img class="w-[70px] lg:w-20" src="images/Logo.png" alt="IbonBerasategui">
-      </a>
-      
-    </div>
+<nav x-data="{ open: false }" class="bg-naranjaw sticky top-0 z-20 p-2">
+  <div class="w-full px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
 
-    <div class="block lg:hidden">
-      <button id='boton' class="flex items-center px-3 py-2 border rounded text-naranjab border-naranjab hover:text-white hover:border-white">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-      </button>
-    </div>
 
-    <div id='menu' class="w-full min-h-screen lg:min-h-min grow lg:flex lg:items-center lg:w-auto hidden z-10">
+      <div class="absolute inset-y-3 right-3 flex items-center lg:hidden">
+        <!-- Mobile menu button-->
+        <button x-on:click="open = ! open" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-naranjab hover:text-blancow hover:bg-naranjab focus:outline-none focus:ring-2 focus:ring-inset focus:ring-naranjab" >
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
 
-      <div class="text-sm lg:grow">
+            Heroicon name: outline/menu
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!--
+            Icon when menu is open.
+
+            Heroicon name: outline/x
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
 
-      <div class="text-center">
-        <a href="/historia.html" class="font-raleway text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">
-          COMUNIDAD
-        </a>
-        <a href="/historia.html" class="font-raleway text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">
-          NUESTROS VALORES
-        </a>
-        <a href="/historia.html" class="font-raleway text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">
-          HISTORIA
-        </a>
-        <a href="#" class="font-raleway text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">
-          SERVICIO 1
-        </a>
-        <a href="#" class="font-raleway text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">
-          SERVICIO 2
-        </a>
-        <a href="/historia.html" class="font-raleway text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white">
-          ¿HABLAMOS?
-        </a>
+
+      <div class="ml-10 flex-1 flex flex-row-reverse items-center justify-center sm:items-stretch sm:justify-start relative">
+
+        <div class="flex-shrink-0 flex items-center">
+          <a class="cursor-pointer" href="/">
+            <img class="absolute -left-10 -top-3 lg:top-2 block w-[75px] lg:w-20" src="/public/images/Logo.png" alt="Ibon Berasategui Logo">
+          </a>
+        </div>
+
+        <div class="hidden lg:block">
+          <div class="flex space-x-4">
+            <a href="#" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">COMUNIDAD</a>
+
+            <a href="/historia.html" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">MI HISTORIA</a>
+
+            <a href="#" class="font-raleway text-xl block mt-4 lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">ENTRENAMIENTOS PERSONALES</a>
+
+            <a href="/hablamos.html" class="font-raleway text-xl block mt-4 lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">¿HABLAMOS?</a>
+          </div>
+        </div>
+
       </div>
 
     </div>
-  </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div x-show="open" class="lg:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center justify-center">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">COMUNIDAD</a>
+
+      <a href="/historia.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">MI HISTORIA</a>
+
+      <a href="#" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">ENTRENAMIENTOS PERSONALES</a>
+
+      <a href="/hablamos.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">¿HABLAMOS?</a>
+    </div>
+  </div>
+
+</nav>
 
     <section id="hero" class="mx-10 flex flex-col text-center justify-center items-center min-h-screen">
         <h1 class="font-raleway text-5xl md:text-6xl lg:text-8xl text-naranjaw mb-10">HOLA MUNDO, YA TENGO LA <span class="hover:text-lilaw cursor-pointer">ESTRUCTURA</span> INSTALADA,<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span> </h1>
@@ -111,8 +143,8 @@
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <div class="px-10 pt-20 flex flex-col justify-between">
           <h1 class="font-raleway text-5xl text-naranjaw mb-5">HOLA MUNDO, YA TENGO LA ESTRUCTURA INSTALADA,<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span> </h1>
-            <div class="p-5 flex bg-verdew rounded-lg mb-5">
-              <p class="font-dmsans text-naranjaw text-xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, cupiditate, sit est maxime dolorem eaque perferendis eum vitae eligendi accusamus possimus dolorum a molestiae, nesciunt excepturi animi obcaecati beatae cumque.</p>
+            <div class="p-5 flex bg-blancob mb-5">
+              <p class="font-dmsans text-negrob text-xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. In, cupiditate, sit est maxime dolorem eaque perferendis eum vitae eligendi accusamus possimus dolorum a molestiae, nesciunt excepturi animi obcaecati beatae cumque.</p>
             </div>
         </div>
         <div class="object-cover aspect-video items-center justify-center flex">
@@ -201,7 +233,7 @@
 
 
     <footer class="bg-verdew h-max lg:h-80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative">
-      <div class=" m-10 mt-8 rounded-lg p-3 flex flex-col">
+      <div class="m-10 mt-8 p-3 flex flex-col">
           <div class="flex justify-center">
             <img class="w-20 mr-2" src="images/Logo.png" alt="IbonBerasategui">
             <img class="w-20 ml-2" src="images/Logo.png" alt="IbonBerasategui">
@@ -211,9 +243,9 @@
 
       <div class="m-10 mt-8">
         <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">SERVICIO 1</h1>
-        <div class="h-20 flex bg-gradient-to-r from-azulw to-azulb rounded-lg mb-4"></div>
+        <div class="h-20 flex bg-gradient-to-r from-azulw to-azulb mb-4"></div>
         <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">SERVICIO 2</h1>
-        <div class="h-20 flex bg-gradient-to-r from-lilaw to-salmonb rounded-lg"></div>
+        <div class="h-20 flex bg-gradient-to-r from-lilaw to-salmonb"></div>
       </div>
 
       <div class="m-10 mt-8 flex flex-col gap-y-2">
@@ -245,12 +277,12 @@
       </div>
 
       <div class="absolute -top-14 right-9">
-        <a href="#" class="boton rounded-full mr-10">
+        <a href="#" class="boton mr-10">
           ¿NECESITAS AYUDA?
         </a>
       </div>
-      <div class="absolute -top-14 right-3">
-        <a href="#hero" class="boton rounded-full flex items-center justify-center">
+      <div class="absolute -top-14 right-5">
+        <a href="#hero" class="boton flex items-center justify-center bg-naranjaw text-verdew hover:text-blancow">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
           </svg>
@@ -260,6 +292,7 @@
       </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="purecookie.js"></script>
+    
 </body>
 </html>

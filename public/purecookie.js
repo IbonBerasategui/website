@@ -3,7 +3,7 @@ var purecookieTitle = "HAY ALGUNAS COOKIES"; // Title
 var purecookieDesc = "Tranqui, son para que tu experiencia navegando sea lo mejor posible. Si sigues en la web, doy por hecho que las aceptas."; // Description
 var purecookieLink = '<a href="/politica-cookies.html" target="_blank">Política de Cookies</a>'; // Cookiepolicy link
 var purecookieLink2 = '<a href="/politica-privacidad.html" target="_blank">Política de Privacidad</a>'; // Privacypolicy link
-var purecookieButton = "¡Genial!"; // Button text
+var purecookieButton = "Cookies bajas en calorías"; // Button text
 // ---        --- //
 
 

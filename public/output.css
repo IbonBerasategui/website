@@ -1090,6 +1090,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blancow:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 244 244 / var(--tw-bg-opacity));
+}
+
 .hover\:text-blancow:hover{
   --tw-text-opacity: 1;
   color: rgb(245 244 244 / var(--tw-text-opacity));
@@ -1103,6 +1108,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-lilaw:hover{
   --tw-text-opacity: 1;
   color: rgb(120 115 158 / var(--tw-text-opacity));
+}
+
+.hover\:text-blancob:hover{
+  --tw-text-opacity: 1;
+  color: rgb(213 222 224 / var(--tw-text-opacity));
+}
+
+.hover\:text-naranjaw:hover{
+  --tw-text-opacity: 1;
+  color: rgb(232 163 57 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{

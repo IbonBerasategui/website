@@ -35,6 +35,11 @@ module.exports = {
         lilab:'#5B597A',
         salmonw:'#E6B69D',
         salmonb:'#C69B8D',
+        discord:'#7289da',
+        tiktok1:'#ff0050',
+        instagram1:'#F56040',
+        instagram2:'#833AB4',
+        instagram3:'#5B51D8',
       },
       spacing: {
         '128': '32rem',

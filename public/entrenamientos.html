@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/Favicon.png" sizes="32x32">
+    <title>Entrenamientos</title>
+    <link href="output.css" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YK613MTX7B"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YK613MTX7B');
+        </script>
+    <!--Fin Global site tag (gtag.js) - Google Analytics -->
+
+    <script src="https://kit.fontawesome.com/5d94ff46f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="purecookie.css"/>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body class="bg-blancow select-none scroll-smooth mx-auto">
+
+  <nav x-data="{ open: false }" class="bg-naranjaw sticky top-0 z-20 p-2">
+    <div class="w-full px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+  
+  
+        <div class="absolute inset-y-3 right-3 flex items-center lg:hidden">
+          <!-- Mobile menu button-->
+          <button x-on:click="open = ! open" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-naranjab hover:text-blancow hover:bg-naranjab focus:outline-none focus:ring-2 focus:ring-inset focus:ring-naranjab" >
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+  
+  
+        <div class="ml-10 flex-1 flex flex-row-reverse items-center justify-center sm:items-stretch sm:justify-start relative">
+  
+          <div class="flex-shrink-0 flex items-center">
+            <a class="cursor-pointer" href="/">
+              <img class="absolute -left-10 -top-3 lg:top-2 block w-[75px] lg:w-20" src="images/Logo.png" alt="Ibon Berasategui Logo">
+            </a>
+          </div>
+  
+          <div class="hidden lg:block">
+            <div class="flex space-x-4">
+              <a href="#" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">COMUNIDAD</a>
+  
+              <a href="/historia.html" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">MI HISTORIA</a>
+  
+              <a href="#" class="font-raleway text-xl block mt-4 lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">ENTRENAMIENTOS PERSONALES</a>
+  
+              <a href="/hablamos.html" class="font-raleway text-xl block mt-4 lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">¿HABLAMOS?</a>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Mobile menu -->
+    <div x-show="open" class="lg:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center justify-center">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">COMUNIDAD</a>
+  
+        <a href="/historia.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">MI HISTORIA</a>
+  
+        <a href="#" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">ENTRENAMIENTOS PERSONALES</a>
+  
+        <a href="/hablamos.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">¿HABLAMOS?</a>
+      </div>
+    </div>
+  
+  </nav>
+
+  <section id="hero" class="mx-10 flex flex-col text-center justify-center items-center min-h-screen p-2 lg:p-20">
+    <h1 class="font-raleway text-5xl md:text-6xl lg:text-8xl text-naranjaw mb-16">ENTRENAMIENTOS PARA <span class="hover:text-lilaw cursor-pointer">AVENTUREROS</span> VIAJEROS DEL MUNDO<span class="text-verdew"></span> </h1>
+    <iframe class="aspect-video w-full rounded-lg" src="https://www.youtube.com/embed/4fVFsbcXBkI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <section class="min-h-screen bg-blancow flex flex-col items-center justify-center">
+    <h1 class="font-raleway text-4xl lg:text-5xl text-naranjaw my-16 container text-center px-16">HOLA MUNDO, YA TENGO LA ESTRUCTURA INSTALADA,<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span></h1>
+    <div class="grid grid-cols-1 lg:grid-cols-3 container">
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[350px]" src="images/servicio1.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">FASE 1</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey Esto debería de ser un texto de explicación de un testimonio okey Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[350px]" src="images/servicio2.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">FASE 2</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey Esto debería de ser un texto de explicación de un testimonio okey Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[350px]" src="images/servicio2.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">FASE 3</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey Esto debería de ser un texto de explicación de un testimonio okey Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-10 flex flex-col text-center justify-center pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col items-center justify-center text-center m-2 mx-7">
+            <img class="w-10 h-10 m-8" src="images/Favicon.png" alt="">
+            <h2 class="font-raleway text-naranjaw text-xl ">NOMBRE DE CARACTERISTICA</h2>
+            <p class="font-dmsans text-base text-verdew " > Esto debería ser una descripción de una caracteristica clave de entrenar con Ibon Berasategui</p>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center m-2 mx-7">
+            <img class="w-10 h-10 m-8" src="images/Favicon.png" alt="">
+            <h2 class="font-raleway text-naranjaw text-xl ">NOMBRE DE CARACTERISTICA</h2>
+            <p class="font-dmsans text-base text-verdew " > Esto debería ser una descripción de una caracteristica clave de entrenar con Ibon Berasategui</p>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center m-2 mx-7">
+            <img class="w-10 h-10 m-8" src="images/Favicon.png" alt="">
+            <h2 class="font-raleway text-naranjaw text-xl ">NOMBRE DE CARACTERISTICA</h2>
+            <p class="font-dmsans text-base text-verdew " > Esto debería ser una descripción de una caracteristica clave de entrenar con Ibon Berasategui</p>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center m-2 mx-7">
+            <img class="w-10 h-10 m-8" src="images/Favicon.png" alt="">
+            <h2 class="font-raleway text-naranjaw text-xl ">NOMBRE DE CARACTERISTICA</h2>
+            <p class="font-dmsans text-base text-verdew " > Esto debería ser una descripción de una caracteristica clave de entrenar con Ibon Berasategui</p>
+        </div>
+    </div>
+</section>
+
+    
+
+    <div class="min-h-screen bg-gray-200 flex flex-col justify-center">
+    <h1 class="font-raleway text-4xl lg:text-5xl text-naranjaw my-16 container text-center px-16 mx-auto">ESTE HA SIDO EL PROCESO <span class="text-verdew"> DE TRANSFORMACIÓN</span></h1>
+    <div class="relative m-3 flex flex-wrap mx-auto justify-center">
+
+        <div class="relative max-w-sm min-w-[340px] bg-blancow shadow-xl p-2 mx-10 my-3 cursor-pointer">
+        <div class="overflow-x-hidden relative">
+            <img class="h-96 w-full object-cover" src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
+            <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70" fill="none" viewBox="0 0 24 24" stroke="black">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            </p>
+        </div>
+        <div class="mt-4 pl-2 mb-2 flex justify-between ">
+            <div>
+            <p class="text-lg font-semibold text-naranjaw mb-0">Entrenamiento básico</p>
+            <p class="text-md text-naranjaw mt-0">$340</p>
+            </div>
+            <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none" viewBox="0 0 24 24" stroke="gray">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            </div>
+        </div>
+        </div>
+
+        <div class="relative max-w-sm min-w-[340px] bg-verdeb rounded-3xl p-2 mx-10 my-3 cursor-pointer">
+        <div class="overflow-x-hidden rounded-2xl relative">
+            <img class="h-96 rounded-2xl w-full object-cover" src="https://pixahive.com/wp-content/uploads/2020/10/Gym-shoes-153180-pixahive.jpg">
+            <p class="absolute right-2 top-2 bg-white rounded-full p-2 cursor-pointer group">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-50 opacity-70" fill="none" viewBox="0 0 24 24" stroke="black">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            </p>
+        </div>
+        <div class="mt-4 pl-2 mb-2 flex justify-between ">
+            <div>
+            <p class="text-lg font-semibold text-naranjaw mb-0">Entrenamineto para aventureros</p>
+            <p class="text-md text-naranjaw mt-0">$340</p>
+            </div>
+            <div class="flex flex-col-reverse mb-1 mr-4 group cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:opacity-70" fill="none" viewBox="0 0 24 24" stroke="gray">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <section x-data="{ open: false }" class="mx-auto container px-10 pt-20 flex flex-col">
+    <h3 class=" text-[20px] lg:text-[28px] font-raleway text-naranjaw text-xl ">TIENES ALGUNA PREGUNTA?</h3>
+        <article class="mt-5 lg:mt-10 border-b border-naranjaw pb-7">
+            <div class="flex items-start sm:items-center w-full justify-between">
+                <h4 class="text-base md:text-[18px] lg:text-2xl font-dmsans text-lilaw">¿Cómo es posible que los entrenamientos sean tan buenos?</h4>
+                <button x-on:click="open = ! open" aria-label="Show/hide answer" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus text-naranjaw" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="9" y1="12" x2="15" y2="12"></line>
+                        <line x1="12" y1="9" x2="12" y2="15"></line>
+                    </svg>
+                </button>
+            </div>
+            <p x-show="open" class=" text-sm md:text-base lg:text-lg mt-4 font-dmsans text-verdew">Use in your existing Tailwind CSS projects by copy-pasting HTML code Use one of our presets to generate a base for your new project Use preset and modify the page by adding/modifying tailwind css components</p>
+        </article>
+    </section>
+    <section x-data="{ open: false }" class="mx-auto container px-10 flex flex-col">
+        <article class="mt-5 lg:mt-10 border-b border-naranjaw pb-7">
+            <div class="flex items-start sm:items-center w-full justify-between">
+                <h4 class="text-base md:text-[18px] lg:text-2xl font-dmsans text-lilaw">¿Podría devolver un entrenamiento que ya he empezado?</h4>
+                <button x-on:click="open = ! open" aria-label="Show/hide answer" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus text-naranjaw" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="9" y1="12" x2="15" y2="12"></line>
+                        <line x1="12" y1="9" x2="12" y2="15"></line>
+                    </svg>
+                </button>
+            </div>
+            <p x-show="open" class=" text-sm md:text-base lg:text-lg mt-4 font-dmsans text-verdew">Use in your existing Tailwind CSS projects by copy-pasting HTML code Use one of our presets to generate a base for your new project Use preset and modify the page by adding/modifying tailwind css components</p>
+        </article>
+    </section>
+    <section x-data="{ open: false }" class="mx-auto container px-10 pb-10 flex flex-col">
+        <article class="mt-5 lg:mt-10 border-b border-naranjaw pb-7">
+            <div class="flex items-start sm:items-center w-full justify-between">
+                <h4 class="text-base md:text-[18px] lg:text-2xl font-dmsans text-lilaw">¿Cuántos viajes me cubre el entrenamiento personalizado?</h4>
+                <button x-on:click="open = ! open" aria-label="Show/hide answer" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus text-naranjaw" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <line x1="9" y1="12" x2="15" y2="12"></line>
+                        <line x1="12" y1="9" x2="12" y2="15"></line>
+                    </svg>
+                </button>
+            </div>
+            <p x-show="open" class=" text-sm md:text-base lg:text-lg mt-4 font-dmsans text-verdew">Use in your existing Tailwind CSS projects by copy-pasting HTML code Use one of our presets to generate a base for your new project Use preset and modify the page by adding/modifying tailwind css components</p>
+        </article>
+    </section>
+
+  <section class="min-h-screen bg-blancow flex flex-col items-center justify-center">
+    <h1 class="font-raleway text-4xl lg:text-5xl text-naranjaw my-16 container text-center px-16">ESTE HA SIDO EL PROCESO <span class="text-verdew"> DE TRANSFORMACIÓN</span></h1>
+    <div class="grid grid-cols-1 lg:grid-cols-4 container">
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[300px]" src="images/servicio1.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">3 MESES</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[300px]" src="images/servicio2.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">9 MESES</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[300px]" src="images/servicio2.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">12 MESES</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col text-center justify-center items-center">
+        <div class="objet-cover">
+          <img class="max-h-[300px]" src="images/servicio2.png">
+        </div>
+        <h2 class="font-raleway text-naranjaw text-xl ">24 MESES</h2>
+        <div class="p-3 my-10">
+          <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <section class="mx-10 flex flex-col text-center justify-center py-32 ">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="flex flex-col items-center justify-center text-center mx-0 lg:mx-10 bg-verdew p-10 relative pt-56">
+            <div class="objet-cover absolute -top-36">
+                <img class="max-h-[350px]" src="images/servicio1.png">
+              </div>
+            <h2 class="font-raleway text-naranjaw text-xl ">NOMBRE DE CARACTERISTICA</h2>
+            <p class="font-dmsans text-base text-naranjaw " > Esto debería ser una descripción de una caracteristica clave de entrenar con Ibon Berasategui</p>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center mx-0 lg:mx-10 bg-lilaw p-10 relative pt-56 mt-56 lg:mt-0">
+            <div class="objet-cover absolute -top-36">
+                <img class="max-h-[350px]" src="images/servicio2.png">
+              </div>
+            <h2 class="font-raleway text-naranjaw text-xl ">NOMBRE DE CARACTERISTICA</h2>
+            <p class="font-dmsans text-base text-naranjaw " > Esto debería ser una descripción de una caracteristica clave de entrenar con Ibon Berasategui</p>
+        </div>
+    </div>
+</section>
+
+  <footer class="bg-verdew h-max lg:h-80 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative">
+    <div class="m-10 mt-8 p-3 flex flex-col">
+        <div class="flex justify-center">
+          <img class="w-20 mr-2" src="images/Logo.png" alt="IbonBerasategui">
+          <img class="w-20 ml-2" src="images/Logo.png" alt="IbonBerasategui">
+        </div>
+        <p class="font-dmsans text-lg md:text-xl mt-4 text-center text-naranjaw">Entrenando sin límites desde cualquier lugar del mundo <3</p>
+    </div>
+
+    <div class="m-10 mt-8">
+      <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">ENTRENAMIENTO</h1>
+      <div class="h-20 flex bg-gradient-to-r from-azulw to-azulb mb-4"></div>
+      <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">ENTRENAMIENTO 2</h1>
+      <div class="h-20 flex bg-gradient-to-r from-lilaw to-salmonb"></div>
+    </div>
+
+    <div class="m-10 mt-8 flex flex-col gap-y-2">
+      <h1 class="font-raleway text-xl md:text-2xl mb-1 text-naranjaw">LEGAL</h1>
+
+      <a href="/politica-cookies.html" class="font-dmsans text-xl md:text-xl text-naranjaw hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-center">
+        <span><i class="fa-solid fa-cookie-bite mr-2 "></i></span>Cookies</a>
+
+      <a href="/politica-privacidad.html" class="font-dmsans text-lg md:text-xl text-naranjaw hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-center">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+        </svg></span>Privacidad</a>
+
+      <a href="/aviso-legal.html" class="font-dmsans text-lg md:text-xl text-naranjaw hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-center">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg></span>Aviso legal</a>
+
+      <a href="/terminos-condiciones.html" class="font-dmsans text-lg md:text-xl text-naranjaw hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-start">
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="mt-1 mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg></span>Terminos y Condiciones</a>
+    </div>
+
+    <div class="m-10 mt-8 flex flex-col gap-y-2">
+      <h1 class="font-raleway text-xl md:text-2xl mb-1 text-naranjaw">SOCIAL</h1>
+      <div class="text-naranjaw hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-instagram1 hover:via-instagram2 hover:to-instagram3 transform duration-100 ease-in-out">
+        <a href="https://www.instagram.com/ibonberasateguitrainer/" target="blank" class="font-raleway text-xl md:text-2xl mb-1 flex items-center cursor-pointer">
+          <span><i class="fa-brands fa-instagram mr-2"></i></span>INSTAGRAM</a>
+      </div>
+      <div class="text-naranjaw hover:text-discord transform duration-100 ease-in-out">
+        <a href="#" class="font-raleway text-xl md:text-2xl mb-1 flex items-center">
+          <span><i class="fa-brands fa-discord mr-2"></i></span>DISCORD</a>
+      </div>
+      <div class="text-naranjaw hover:text-tiktok1 transform duration-100 ease-in-out">
+        <a href="#" class="font-raleway text-xl md:text-2x mb-1 flex items-center">
+          <span><i class="fa-brands fa-tiktok mr-2"></i></span>TIKTOK</a>
+      </div>
+    </div>
+
+    <div class="absolute -top-14 right-9">
+      <a href="#" class="boton mr-10">
+        ¿NECESITAS AYUDA?
+      </a>
+    </div>
+    <div class="absolute -top-14 right-5">
+      <a href="#hero" class="boton flex items-center justify-center bg-naranjaw text-verdew hover:text-blancow">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+        </svg>
+      </a>
+    </div>
+
+    </div>
+  </footer>
+
+  <script src="purecookie.js"></script>
+
+</body>
+</html>

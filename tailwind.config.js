@@ -11,6 +11,7 @@ module.exports = {
     './public/terminos-condiciones.html',
     './public/historia.html',
     './public/hablamos.html',
+    './public/entrenamientos.html',
     './src/**/*.{html,js}',
     './src/**/*.js',
   ],
@@ -40,6 +41,9 @@ module.exports = {
         instagram1:'#F56040',
         instagram2:'#833AB4',
         instagram3:'#5B51D8',
+      },
+      padding: {
+        '18': '4.625rem',
       },
       spacing: {
         '128': '32rem',

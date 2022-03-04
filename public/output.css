@@ -755,6 +755,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 14rem;
 }
 
+.mb-40{
+  margin-bottom: 10rem;
+}
+
 .block{
   display: block;
 }
@@ -1003,6 +1007,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
+.rounded-t-full{
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.rounded-t-4xl{
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -1227,6 +1241,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-56{
   padding-top: 14rem;
+}
+
+.pt-32{
+  padding-top: 8rem;
 }
 
 .pb-20{

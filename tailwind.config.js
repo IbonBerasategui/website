@@ -41,6 +41,7 @@ module.exports = {
         instagram1:'#F56040',
         instagram2:'#833AB4',
         instagram3:'#5B51D8',
+        whatsapp:'#00bb2d',
       },
       padding: {
         '18': '4.625rem',

@@ -644,19 +644,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0px;
 }
 
-.mx-7{
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-}
-
 .mx-2{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
 
-.my-5{
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
+.mx-7{
+  margin-left: 1.75rem;
+  margin-right: 1.75rem;
 }
 
 .ml-10{
@@ -743,12 +738,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
+.-mt-20{
+  margin-top: -5rem;
 }
 
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.mt-28{
+  margin-top: 7rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .mt-3{
@@ -757,10 +760,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-28{
   margin-bottom: 7rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
 }
 
 .block{
@@ -1209,6 +1208,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1234,16 +1238,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
-.pt-72{
-  padding-top: 18rem;
+.pt-64{
+  padding-top: 16rem;
 }
 
-.pb-20{
-  padding-bottom: 5rem;
+.pb-28{
+  padding-bottom: 7rem;
 }
 
 .pt-56{
   padding-top: 14rem;
+}
+
+.pt-52{
+  padding-top: 13rem;
+}
+
+.pb-52{
+  padding-bottom: 13rem;
+}
+
+.pb-20{
+  padding-bottom: 5rem;
 }
 
 .pb-7{
@@ -1252,14 +1268,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-10{
   padding-bottom: 2.5rem;
-}
-
-.pt-64{
-  padding-top: 16rem;
-}
-
-.pb-28{
-  padding-bottom: 7rem;
 }
 
 .text-center{
@@ -1556,6 +1564,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px){
+  .md\:mx-7{
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+  }
+
+  .md\:mt-36{
+    margin-top: 9rem;
+  }
+
   .md\:h-56{
     height: 14rem;
   }
@@ -1566,6 +1583,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:text-left{
@@ -1631,6 +1653,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 2.5rem;
   }
 
+  .lg\:mx-7{
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+  }
+
   .lg\:mt-0{
     margin-top: 0px;
   }
@@ -1645,10 +1672,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:ml-5{
     margin-left: 1.25rem;
-  }
-
-  .lg\:mt-20{
-    margin-top: 5rem;
   }
 
   .lg\:mt-28{

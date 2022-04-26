@@ -918,8 +918,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row-reverse{
@@ -1341,6 +1341,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(188 128 46 / var(--tw-text-opacity));
 }
 
+.text-blancob{
+  --tw-text-opacity: 1;
+  color: rgb(213 222 224 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1349,6 +1354,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-verdeb{
+  --tw-text-opacity: 1;
+  color: rgb(10 21 13 / var(--tw-text-opacity));
 }
 
 .text-verdew{

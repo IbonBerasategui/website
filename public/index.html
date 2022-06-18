@@ -70,13 +70,13 @@
         <div class="hidden lg:block">
           <div class="flex space-x-4">
 
-            <a href="/" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white">HOME</a>
+            <a href="/" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-white transition-all ease-in-out hover:text-naranjab px-2">INICIO</a>
 
-            <a href="/entrenamientos.html" class="font-raleway text-xl block mt-4 lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">ENTRENAMIENTOS PERSONALES</a>
+            <a href="/entrenamientos.html" class="font-raleway text-xl block mt-4 lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4 px-2">PLANES</a>
 
-            <a href="/historia.html" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4">MI HISTORIA</a>
+            <a href="/historia.html" class="font-raleway text-xl mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white mr-4 px-2">SOBRE MI</a>
 
-            <a href="/hablamos.html" class="font-raleway text-xl block mt-4 lg:mt-0 text-white transition-all ease-in-out hover:text-lilaw mr-4">¿HABLAMOS?</a>
+            <a href="/hablamos.html" class="font-raleway text-xl block mt-4 lg:mt-0 text-verdew transition-all ease-in-out hover:text-lilaw mr-4 px-2">¿HABLAMOS?</a>
           </div>
         </div>
 
@@ -89,22 +89,26 @@
   <div x-show="open" class="lg:hidden" id="mobile-menu">
     <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col items-center justify-center">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="/" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white ">HOME</a>
+      <a href="/" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-white transition-all ease-in-out hover:text-naranjab ">INICIO</a>
 
-      <a href="/entrenamientos.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white ">ENTRENAMIENTOS PERSONALES</a>
+      <a href="/entrenamientos.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white ">PLANES</a>
 
-      <a href="/historia.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white ">MI HISTORIA</a>
+      <a href="/historia.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-naranjab transition-all ease-in-out hover:text-white ">SOBRE MI</a>
 
-      <a href="/hablamos.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-white transition-all ease-in-out hover:text-lilaw ">¿HABLAMOS?</a>
+      <a href="/hablamos.html" class="font-raleway px-3 py-2 text-xl block mt-4 lg:inline-block lg:mt-0 text-verdew transition-all ease-in-out hover:text-lilaw ">¿HABLAMOS?</a>
     </div>
   </div>
 
 </nav>
 
+<section id="hero" class="shrink-0 overflow-hidden object-cover bg-blancow -mt-20">
+  <img class="h-48 md:h-452 overflow-hidden object-cover" alt="entrena-sin-limites" src="images/entrena-sin-limites.png">
+</section>
+
     <section id="hero" class="mx-10 flex flex-col text-center justify-center items-center min-h-fit py-20 lg:my-0 lg:min-h-screen p-2 lg:p-20">
-        <h1 class="font-raleway text-3xl md:text-6xl lg:text-8xl text-naranjaw mb-10">HOLA MUNDO, YA TENGO LA <span class="hover:text-lilaw cursor-pointer">ESTRUCTURA</span> INSTALADA,<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span> </h1>
+        <h1 class="font-raleway text-4xl md:text-6xl lg:text-8xl text-naranjaw mb-10">LLEVA EL <span class="hover:text-lilaw cursor-pointer transition-all ease-in-out">ESTILO DE VIDA</span> SALUDABLE QUE QUIERES,<span class="text-verdew"> ESTÉS DONDE ESTÉS</span> </h1>
         <iframe class="aspect-video w-full rounded-lg" src="https://www.youtube.com/embed/4fVFsbcXBkI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="boton mt-10">QUIERO SABER MÁS</div>
+        <div class="boton mt-10 hover:bg-lilaw">CONSIGUE TU PLAN PERFECTO</div>
     </section>
 
     <div class="shrink-0 overflow-hidden object-cover bg-blancow">
@@ -113,11 +117,14 @@
 
     <section class="min-h-screen">
       <div class="grid grid-cols-1 lg:grid-cols-2">
-        <div class="px-10 pt-20 flex flex-col justify-between">
-          <h1 class="font-raleway text-3xl md:text-4xl lg:text-5xl text-center md:text-left text-naranjaw mb-5">HOLA MUNDO, YA TENGO LA ESTRUCTURA INSTALADA,<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span></h1>
-          <iframe class="aspect-video w-full rounded-lg" src="https://www.youtube.com/embed/4fVFsbcXBkI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="p-5 flex bg-blancob mb-5">
-              <p class="font-dmsans text-negrob text-xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="px-10 pt-20 flex flex-col justify-start">
+          <h1 class="font-raleway text-4xl md:text-4xl lg:text-5xl text-center md:text-left text-naranjaw mb-5">PARA TI, QUE ADORAS VIAJAR, VIVIR NUEVAS AVENTURAS Y LA NATURALEZA<br><br><span class="text-verdew"> NO DEJES QUE TU PASIÓN ACABE CON TU ESTILO DE VIDA SALUDABLE</span></h1>
+          
+            <div class="pt-5 flex mb-5">
+              <p class="font-dmsans text-negrob text-xl"> Muchas veces abandonamos nuestra rutina de entrenamiento porque nos cansamos de encerrarnos en un gimnasio todos los días o surgen viajes con frecuencia que cortan nuestra rutina. <br><br>
+
+                Yo he vivido eso, pero he conseguido compaginar mis hábitos saludables con cada viaje que hago, y puedo ayudarte a hacerlo a ti también.
+                </p>
             </div>
         </div>
         <div class="object-cover aspect-video items-center justify-center flex">
@@ -127,6 +134,7 @@
     </section>
 
     <section class="bg-naranjaw">
+      <h1 class="font-raleway text-3xl md:text-4xl lg:text-5xl text-center md:text-left text-blancow px-10 pt-10 pb-5">ENTRENA SIN LÍMITES<span class="text-verdew"> DESDE CUALQUIER LUGAR</span></h1>
       <div class=" shrink-0 flex w-full overflow-x-auto pt-5 pb-3 pr-5 gap-5 snap-x">
           <div class="shrink-0 ml-5 relative">
               <img class="shrink-0 h-80 lg:h-96 rounded-lg" src="https://images.unsplash.com/photo-1627483298606-cf54c61779a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8Mjl8fGZpdG5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60">
@@ -170,7 +178,7 @@
               <div class="bg-naranjaw p-3">
                 <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
               </div>
-              <a href="#" class="boton">Soy un testimonio / ver Instagram</a>
+              <a href="#" class="boton hover:bg-lilaw">Ver Instagram</a>
             </div>
             <div class="p-5 flex flex-col text-center">
               <div class="objet-cover">
@@ -179,7 +187,7 @@
               <div class="bg-naranjaw p-3">
                 <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
               </div>
-              <a href="#" class="boton">Soy un testimonio / ver Instagram</a>
+              <a href="#" class="boton hover:bg-lilaw">Ver Instagram</a>
             </div>
             <div class="p-5 flex flex-col text-center">
               <div class="objet-cover">
@@ -188,72 +196,65 @@
               <div class="bg-naranjaw p-3">
                 <p class="font-dmsans text-verdew">Esto debería de ser un texto de explicación de un testimonio okey</p>
               </div>
-              <a href="#" class="boton">Soy un testimonio / ver Instagram</a>
+              <a href="#" class="boton hover:bg-lilaw">Ver Instagram</a>
             </div>
           </div>
       </section>
 
 
-      <section class="w-full flex flex-wrap text-center justify-around items-center p-8 bg-verdew">
-        <h1 class="font-raleway text-naranjaw text-xl lg:text-3xl">¿AÚN NO HAS EMPEZADO A ENTRENAR Y A CAMBIAR TU VIDA?</h1>
-        <a href="#" class="boton bg-lilaw mt-5 lg:mt-0"> Quiero mi entrenamiento</a>
+      <section class="w-full flex flex-wrap text-center justify-around items-center p-8 bg-lilaw">
+        <h1 class="font-raleway text-naranjaw text-2xl lg:text-4xl">NO ABANDONES NINGUNA RUTINA MÁS,<br> CONVIERTE EL DEPORTE EN TU ESTILO DE VIDA</h1>
+        <a href="/entrenamientos.html" class="boton bg-naranjaw hover:bg-lilab text-verdew hover:text-naranjaw mt-5 lg:mt-0"> Ver planes</a>
       </section>
 
 
-      <section class=" bg-blancow flex items-center justify-center py-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 container mx-5">
+      <section class=" bg-blancow flex items-center justify-center pt-32 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 container mx-5">
           <div class="p-5 bg-azulw flex flex-col justify-center items-center text-center">
-            <div class="w-20 text-5xl p-5"><span><i class="fa-brands fa-tiktok text-azulb"></i></span></div>
+            <div class="w-20 text-4xl p-5"><span><i class="fa-solid fa-plane-departure text-white"></i></span></div>
             <div class="p-5 bg-azulw">
-              <h1 class="font-raleway text-azulb text-xl lg:text-2xl">¿ERES UN VIAJERO Y NO SABES COMO ENTRENAR BIEN DURO?</h1>
+              <h1 class="font-raleway text-white text-xl lg:text-2xl">¿UN DÍA ESTÁS EN MADRID Y AL SIGUIENTE EN BERLÍN?</h1>
             </div>
-            <div class="bg-azulb p-3">
-              <p class="font-dmsans text-blancow">Esto debería de ser un texto de explicación de un testimonio okey</p>
+            <div class="bg-blancow p-3 py-10 mt-5">
+              <p class="font-dmsans text-azulw">Así es normal que pienses que no puedes tener un plan de entrenamiento personalizado, pero te aseguro que sí.</p>
             </div>
-            <a href="#" class="boton w-full bg-naranjaw text-blancow">Ver Instagram</a>
+            <a href="/entrenamientos.html" class="boton w-full hover:bg-azulb bg-naranjaw text-blancow">Ver planes</a>
           </div>
 
           <div class="p-5 bg-lilaw flex flex-col justify-center items-center text-center">
-            <div class="w-20 text-5xl p-5"><span><i class="fa-brands fa-tiktok text-lilab"></i></span></div>
+            <div class="w-20 text-5xl p-5"><span><i class="fa-solid fa-person-running text-white"></i></span></div>
             <div class="p-5 bg-lilaw">
-              <h1 class="font-raleway text-lilab text-xl lg:text-2xl">¿MUCHO TIEMPO TRABAJANDO PERO POCO EJERCITANDO?</h1>
+              <h1 class="font-raleway text-white text-xl lg:text-2xl">SENDERISMO, SURF, BOXEO, CALISTENIA O LO QUE MÁS TE GUSTE</h1>
             </div>
-            <div class="bg-lilab p-3">
-              <p class="font-dmsans text-blancow">Esto debería de ser un texto de explicación de un testimonio okey</p>
+            <div class="bg-white p-3 py-10 mt-5">
+              <p class="font-dmsans text-lilab">Puedes compaginar otros deportes con el gimnasio, solo tienes que adaptar tu rutina. 
+              </p>
             </div>
-            <a href="#" class="boton w-full bg-naranjaw text-blancow">Ver Instagram</a>
+            <a href="/entrenamientos.html" class="boton w-full hover:bg-lilab bg-naranjaw text-blancow">Ver planes</a>
           </div>
 
           <div class="p-5 bg-salmonw flex flex-col justify-center items-center text-center">
-            <div class="w-20 text-5xl p-5"><span><i class="fa-brands fa-tiktok text-salmonb"></i></span></div>
+            <div class="w-20 text-4xl p-5"><span><i class="fa-solid fa-mountain-sun text-white"></i></span></div>
             <div class="p-5 bg-salmonw">
-              <h1 class="font-raleway text-salmonb text-xl lg:text-2xl">¿UNA SEMANA EN PARIS, OTRA EN ROMA, OTRA EN CANCUN?</h1>
+              <h1 class="font-raleway text-white text-xl lg:text-2xl">MONTAÑA, PLAYA, CIUDAD, GIMNASIO, CASA...</h1>
             </div>
-            <div class="bg-salmonb p-3">
-              <p class="font-dmsans text-blancow">Esto debería de ser un texto de explicación de un testimonio okey</p>
+            <div class="bg-white p-3 py-10 mt-5">
+              <p class="font-dmsans text-salmonb">Sea donde sea, cualquiera puede entrenar y llevar un estilo de vida saludable.</p>
             </div>
-            <a href="#" class="boton w-full bg-naranjaw text-blancow">Ver Instagram</a>
+            <a href="/entrenamientos.html" class="boton w-full hover:bg-salmonb bg-naranjaw text-blancow">Ver planes</a>
           </div>
 
-          <div class="p-5 bg-negrow flex flex-col justify-center items-center text-center">
-            <div class="w-20 text-5xl p-5"><span><i class="fa-brands fa-tiktok text-negrob"></i></span></div>
-            <div class="p-5 bg-negrow">
-              <h1 class="font-raleway text-negrob text-xl lg:text-2xl">¿AÚN NO HAS EMPEZADO A ENTRENAR Y A CAMBIAR TU VIDA?</h1>
-            </div>
-            <div class="bg-negrob p-3">
-              <p class="font-dmsans text-blancow">Esto debería de ser un texto de explicación de un testimonio okey</p>
-            </div>
-            <a href="#" class="boton w-full bg-naranjaw text-blancow">Ver Instagram</a>
-          </div>
 
         </div>
     </section>
 
+  <div class="hidden">
     <div class="shrink-0 overflow-hidden object-cover bg-blancow">
       <img class="h-52 md:h-56 overflow-hidden object-cover" alt="entrena-sin-limites" src="images/entrena-sin-limites.png">
     </div>
+  </div>
 
-
+  <div class="hidden">
       <section class="bg-naranjaw">
         <div class=" shrink-0 flex w-full overflow-x-auto pt-5 pb-3 pr-5 gap-5 snap-x">
             <div class="shrink-0 ml-5 relative">
@@ -288,8 +289,10 @@
             </div>
         </div>
         </section>
+      </div>
 
-        <section class="min-h-screen bg-blancow flex flex-col items-center justify-center py-20">
+      <div class="hidden">
+        <section class="min-h-screen bg-blancow flex flex-col items-center justify-center pb-20">
           <h1 class="font-raleway text-3xl lg:text-5xl text-naranjaw my-16 container text-center px-16">HOLA MUNDO, YA TENGO LA ESTRUCTURA INSTALADA,<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span></h1>
           <div class="grid grid-cols-1 lg:grid-cols-2 container">
             <div class="p-5 flex flex-col text-center justify-center items-center">
@@ -312,18 +315,19 @@
             </div>
           </div>
       </section>
+    </div>
 
-      <section class="min-h-screen bg-salmonw p-10 lg:p-20 flex flex-col items-center">
-        <h1 class="font-raleway text-4xl lg:text-5xl text-salmonb mb-10 container text-center">RECURSOS GRATUITOS PARA QUE TE INTRODUZCAS EN EL MUNDILLO<span class="text-verdew"> AHORA FALTA CONSTRUIR EN ELLA</span></h1>
+      <section class="min-h-screen bg-blancow p-10 lg:p-20 flex flex-col items-center">
+        <h1 class="font-raleway text-4xl lg:text-5xl text-naranjaw mb-10 container text-center">SI AÚN NO LO TIENES CLARO<span class="text-verdew"> PUEDES EMPEZAR <br> POR AQUÍ</span></h1>
       <div class="flex justify-around flex-wrap lg:flex-nowrap my-10">
         <div class="mb-10 lg:mb-0 mr-0 lg:mr-5"><img class="rounded-lg" src="https://images.unsplash.com/photo-1627483298606-cf54c61779a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8Mjl8fGZpdG5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"></div>
         <div class="ml-0 lg:ml-5"><img class="rounded-lg" src="https://images.unsplash.com/photo-1627483298606-cf54c61779a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8Mjl8fGZpdG5lc3N8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"></div>
       </div>
-      <a href="#" class="boton text-center inline-block mt-10">DESCARGAR MIS PRIMERAS TABLAS</a>
+      <a href="#" class="boton text-center inline-block mt-10 hover:bg-lilaw">Rutina de entrenamiento gratuita</a>
       </section>
 
 
-
+      <div class="hidden">
           <section class="flex flex-col text-center justify-center pt-64 pb-28 lg:pb-0 bg-salmonw">
             <div class=" mx-10 grid grid-cols-1 lg:grid-cols-2">
                 <div class="flex flex-col items-center justify-center text-center mx-0 lg:mx-10 bg-verdew p-10 relative pt-56 rounded-t-4xl">
@@ -352,9 +356,10 @@
         
             </div>
         </section>
+      </div>
         
-        <section class="shrink-0 overflow-hidden object-cover bg-blancow hidden lg:flex">
-          <img class="h-52 md:h-56 overflow-hidden object-cover" alt="entrena-sin-limites" src="images/entrena-sin-limites.png">
+        <section class="shrink-0 overflow-hidden object-cover bg-blancow flex">
+          <img class="h-48 md:h-52 overflow-hidden object-cover" alt="entrena-sin-limites" src="images/entrena-sin-limites.png">
         </section>
 
 
@@ -362,19 +367,25 @@
       <div class="m-10 mt-8 p-3 flex flex-col">
           <div class="flex justify-center">
             <img class="w-20 mr-2" src="images/Logo.png" alt="IbonBerasategui">
-            <img class="w-20 ml-2" src="images/Logo.png" alt="IbonBerasategui">
           </div>
-          <p class="font-dmsans text-lg md:text-xl mt-4 text-center text-naranjaw">Entrenando sin límites desde cualquier lugar del mundo <3</p>
+          <p class="font-dmsans text-lg md:text-xl mt-4 text-center text-naranjaw">Entrena sin límites desde cualquier lugar del mundo. <3</p>
       </div>
 
       <div class="m-10 mt-8">
-        <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">ENTRENAMIENTO</h1>
-        <div class="h-20 flex bg-gradient-to-r from-azulw to-azulb mb-4"></div>
-        <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">ENTRENAMIENTO 2</h1>
-        <div class="h-20 flex bg-gradient-to-r from-lilaw to-salmonb"></div>
+        <h1 class="font-raleway text-xl md:text-2xl text-naranjaw mb-2">PLANES</h1>
+        
+        <div class="h-12 flex bg-gradient-to-br from-naranjaw to-salmonb my-6 px-5 py-10 rounded-lg items-center justify-center">
+          <span><i class="fa-solid fa-medal mr-4 text-xl md:text-2xl mb-1 items-center text-blancow"></i></span>
+          <p class="font-dmsans text-xl md:text-xl text-blancow hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-center">Entrena en casa o gimnasio.</p>
+        </div>
+        
+        <div class="h-12 flex bg-gradient-to-br from-lilaw to-salmonb px-5 py-10 rounded-lg items-center justify-center">
+          <span><i class="fa-solid fa-trophy mr-4 text-xl md:text-2xl mb-1 items-center text-blancow"></i></span>
+          <p class="font-dmsans text-xl md:text-xl text-blancow hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-center">Entrena en cualquier lugar.</p>
+        </div>
       </div>
 
-      <div class="m-10 mt-8 flex flex-col gap-y-2">
+      <div class="m-10 mt-8 flex flex-col gap-y-4">
         <h1 class="font-raleway text-xl md:text-2xl mb-1 text-naranjaw">LEGAL</h1>
 
         <a href="/politica-cookies.html" class="font-dmsans text-xl md:text-xl text-naranjaw hover:text-blancob hover:underline hover:decoration-wavy transform duration-100 ease-in-out flex items-center">
@@ -398,23 +409,23 @@
 
       <div class="m-10 mt-8 flex flex-col gap-y-2">
         <h1 class="font-raleway text-xl md:text-2xl mb-1 text-naranjaw">SOCIAL</h1>
+        <div class="text-naranjaw hover:text-tiktok1 transform duration-100 ease-in-out">
+          <a href="https://www.tiktok.com/@ibonberasateguitrainer" class="font-raleway text-xl md:text-2x mb-1 flex items-center">
+            <span><i class="fa-brands fa-tiktok mr-2"></i></span>TIKTOK</a>
+        </div>
         <div class="text-naranjaw hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-instagram1 hover:via-instagram2 hover:to-instagram3 transform duration-100 ease-in-out">
           <a href="https://www.instagram.com/ibonberasateguitrainer/" target="blank" class="font-raleway text-xl md:text-2xl mb-1 flex items-center cursor-pointer">
             <span><i class="fa-brands fa-instagram mr-2"></i></span>INSTAGRAM</a>
         </div>
-        <div class="text-naranjaw hover:text-discord transform duration-100 ease-in-out">
-          <a href="#" class="font-raleway text-xl md:text-2xl mb-1 flex items-center">
-            <span><i class="fa-brands fa-discord mr-2"></i></span>DISCORD</a>
-        </div>
-        <div class="text-naranjaw hover:text-tiktok1 transform duration-100 ease-in-out">
-          <a href="#" class="font-raleway text-xl md:text-2x mb-1 flex items-center">
-            <span><i class="fa-brands fa-tiktok mr-2"></i></span>TIKTOK</a>
+        <div class="text-naranjaw hover:text-lilaw transform duration-100 ease-in-out">
+          <a href="/hablamos.html" class="font-raleway text-xl md:text-2xl mb-1 flex items-center cursor-pointer">
+            <span><i class="fa-brands fa-whatsapp mr-2"></i></span>¿HABLAMOS?</a>
         </div>
       </div>
 
       <div class="absolute -top-14 right-9">
-        <a href="#" class="boton mr-10">
-          ¿NECESITAS AYUDA?
+        <a href="/hablamos.html" class="boton mr-10">
+          HOLA, VIAJERO. ¿ALGUNA DUDA?
         </a>
       </div>
       <div class="absolute -top-14 right-5">

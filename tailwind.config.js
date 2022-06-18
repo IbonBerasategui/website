@@ -25,6 +25,7 @@ module.exports = {
         verdew:'#132A13',
         verdeb:'#0A150D',
         naranjaw:'#E8A339',
+        naranjam:'#E7A136',
         naranjab:'#BC802E',
         azulw:'#6CC7DD',
         azulb:'#56A3AF',

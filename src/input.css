@@ -7,6 +7,6 @@
 
 @layer components {
     .boton {
-      @apply bg-verdew hover:bg-verdeb text-naranjaw font-bold font-raleway py-2 px-4 inline-block cursor-pointer;
+      @apply bg-verdew hover:bg-verdeb text-naranjaw font-black font-raleway py-2 px-4 inline-block cursor-pointer;
     }
   }

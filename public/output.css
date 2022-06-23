@@ -514,7 +514,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: Raleway, sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(232 163 57 / var(--tw-text-opacity));
 }
@@ -679,11 +679,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.75rem;
 }
 
-.mx-20{
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
 .ml-10{
   margin-left: 2.5rem;
 }
@@ -712,6 +707,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
+.mr-0{
+  margin-right: 0px;
+}
+
 .ml-5{
   margin-left: 1.25rem;
 }
@@ -722,10 +721,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mr-0{
-  margin-right: 0px;
 }
 
 .ml-0{
@@ -790,10 +785,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-16{
   margin-top: 4rem;
-}
-
-.mr-5{
-  margin-right: 1.25rem;
 }
 
 .block{
@@ -1078,16 +1069,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
-.rounded-t-4xl{
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-}
-
-.rounded-b-4xl{
-  border-bottom-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-}
-
 .rounded-t-lg{
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -1098,9 +1079,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 0.5rem;
 }
 
-.rounded-t-full{
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
+.rounded-t-4xl{
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.rounded-b-4xl{
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 .border-b{
@@ -1132,9 +1118,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(120 115 158 / var(--tw-bg-opacity));
 }
 
-.bg-azulw{
+.bg-verdew{
   --tw-bg-opacity: 1;
-  background-color: rgb(108 199 221 / var(--tw-bg-opacity));
+  background-color: rgb(19 42 19 / var(--tw-bg-opacity));
+}
+
+.bg-negrow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1145,11 +1136,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-salmonw{
   --tw-bg-opacity: 1;
   background-color: rgb(230 182 157 / var(--tw-bg-opacity));
-}
-
-.bg-verdew{
-  --tw-bg-opacity: 1;
-  background-color: rgb(19 42 19 / var(--tw-bg-opacity));
 }
 
 .bg-blancob{
@@ -1165,11 +1151,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-200{
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-negrow{
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-br{
@@ -1250,12 +1231,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
 .p-4{
   padding: 1rem;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .px-2{
@@ -1281,6 +1262,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-10{
@@ -1311,11 +1297,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-12{
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pt-2{
@@ -1350,6 +1331,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 8rem;
 }
 
+.pb-16{
+  padding-bottom: 4rem;
+}
+
 .pb-20{
   padding-bottom: 5rem;
 }
@@ -1376,10 +1361,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-7{
   padding-bottom: 1.75rem;
-}
-
-.pb-16{
-  padding-bottom: 4rem;
 }
 
 .text-center{
@@ -1451,10 +1432,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-style: italic;
 }
 
-.leading-10{
-  line-height: 2.5rem;
-}
-
 .leading-7{
   line-height: 1.75rem;
 }
@@ -1492,21 +1469,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blancow{
   --tw-text-opacity: 1;
   color: rgb(245 244 244 / var(--tw-text-opacity));
-}
-
-.text-azulw{
-  --tw-text-opacity: 1;
-  color: rgb(108 199 221 / var(--tw-text-opacity));
-}
-
-.text-lilab{
-  --tw-text-opacity: 1;
-  color: rgb(91 89 122 / var(--tw-text-opacity));
-}
-
-.text-salmonb{
-  --tw-text-opacity: 1;
-  color: rgb(198 155 141 / var(--tw-text-opacity));
 }
 
 .text-lilaw{
@@ -1579,19 +1541,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(86 163 175 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-salmonb:hover{
+.hover\:bg-salmonw:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(198 155 141 / var(--tw-bg-opacity));
+  background-color: rgb(230 182 157 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blancow:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(245 244 244 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-salmonw:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(230 182 157 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gradient-to-r:hover{
@@ -1832,12 +1789,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0px;
   }
 
-  .lg\:mb-0{
-    margin-bottom: 0px;
-  }
-
   .lg\:mr-5{
     margin-right: 1.25rem;
+  }
+
+  .lg\:mb-0{
+    margin-bottom: 0px;
   }
 
   .lg\:ml-5{
@@ -1920,10 +1877,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 1rem;
   }
 
-  .lg\:p-3{
-    padding: 0.75rem;
-  }
-
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1968,6 +1921,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2rem;
   }
 
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1975,10 +1933,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[28px\]{
     font-size: 28px;
-  }
-
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 }

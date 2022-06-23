@@ -1443,6 +1443,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 20px;
 }
 
+.font-black{
+  font-weight: 900;
+}
+
+.italic{
+  font-style: italic;
+}
+
 .leading-10{
   line-height: 2.5rem;
 }

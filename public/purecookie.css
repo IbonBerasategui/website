@@ -43,7 +43,7 @@
 
 .cookieConsentContainer .cookieTitle a {
 
-	font-family: Raleway, arial, "sans-serif";
+	font-family: Raleway;
 
 	color: #E8A339;
 
@@ -108,6 +108,8 @@
 	justify-content: center;
 
 	font-family: Raleway, arial, "sans-serif";
+
+	font-weight: 900;
 
 	color: #132A13;
 

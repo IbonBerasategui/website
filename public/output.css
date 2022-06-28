@@ -634,6 +634,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 2rem;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -904,6 +908,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 10rem;
 }
 
+.h-144{
+  height: 36rem;
+}
+
 .max-h-\[500px\]{
   max-height: 500px;
 }
@@ -928,6 +936,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-screen{
   min-height: 100vh;
+}
+
+.min-h-\[100px\]{
+  min-height: 100px;
+}
+
+.min-h-\[200px\]{
+  min-height: 200px;
+}
+
+.min-h-\[500px\]{
+  min-height: 500px;
 }
 
 .w-full{
@@ -1254,6 +1274,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-10{
   padding: 2.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-2{
@@ -1733,6 +1757,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:p-5{
+    padding: 1.25rem;
+  }
+
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1779,6 +1807,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:text-\[18px\]{
     font-size: 18px;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

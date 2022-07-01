@@ -1592,6 +1592,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(245 244 244 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-verdeb:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(10 21 13 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gradient-to-r:hover{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }

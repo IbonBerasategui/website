@@ -1444,6 +1444,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -1451,11 +1456,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[20px\]{
   font-size: 20px;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-black{
@@ -1788,6 +1788,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
+  .md\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1805,11 +1810,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:text-\[18px\]{
     font-size: 18px;
-  }
-
-  .md\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 }
 

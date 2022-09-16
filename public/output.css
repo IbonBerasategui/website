@@ -1166,6 +1166,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(120 115 158 / var(--tw-bg-opacity));
 }
 
+.bg-azulb{
+  --tw-bg-opacity: 1;
+  background-color: rgb(86 163 175 / var(--tw-bg-opacity));
+}
+
 .bg-negrow{
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 30 / var(--tw-bg-opacity));
@@ -1194,6 +1199,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-slate-200{
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.bg-lilab{
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 89 122 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1573,6 +1583,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-azulb:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(86 163 175 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-naranjaw:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 163 57 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-salmonw:hover{
